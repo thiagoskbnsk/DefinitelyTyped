@@ -90,6 +90,9 @@ export interface CommonCalendarProps {
 export interface CalendarProps extends CommonCalendarProps {
     /** default: today */
     date: DateInputType;
+    
+    /** default: enUs from locale. Complete list here https://github.com/Adphorus/react-date-range/blob/next/src/locale/index.js */
+    locale?: object;
 }
 
 export class Calendar extends React.Component<CalendarProps> { }
